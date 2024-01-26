@@ -1,6 +1,6 @@
 # Desafio processo seletivo tinnova
 
-1 Exercicio 1 escrita dps cenários do front do banco 
+* 1 escrita dps cenários do front do banco 
 
 Cenario: Validar obrigatoridade do campo destino
 ```
@@ -117,7 +117,7 @@ Cenário Validar cancelar a tranfêrencia
    Então cancelar a transfêrencia
 ```
 
-2 - Escrita do sql
+* 2 - Escrita do sql
 
 * Criação das tabelas
   
@@ -190,7 +190,7 @@ INSERT INTO ALUNO_DISCIPLINA(id_aluno, id_disciplina, id_professor) VALUES (4,9,
 INSERT INTO ALUNO_DISCIPLINA(id_aluno, id_disciplina, id_professor) VALUES (7,6,11);
 ```
 
-* Query resolvendo os exercicios
+* 3 - Query resolvendo os exercicios
 
 ```
 /*Exericicio 1*/
