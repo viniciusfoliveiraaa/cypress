@@ -2,22 +2,120 @@
 
 1 Exercicio 1 escrita dps cenários do front do banco 
 
-Validar obrigatoridade do campo destino
-Validar obrigatoriedade do campo valor
-Validar obrigatoriedade do campo data efetivação
-Validar data efetivação anterior ao dia de atual
-Validar data efetivação superior o dia atual
-Validar transferência com cliente destino invalida
-Validar tranfêrencia com um valor negativo
-Validar transfêrencia com um valor acima do saldo
-Validar tranfêrencia com um valor abaixo do saldo
-Validar tranfêrencia com todo o saldo
-Validar tranfêrencia com o saldo zerado
-Validar data efetivação com um formato invalido
-Validar cliente destino atingindo o limite de digitos
-Validar validar o valor maximo do valor permitido
-Validar tranfêrencia com mesmo valor no mesmo dia
-Validar cancelar a tranfêrencia
+Cenario: Validar obrigatoridade do campo destino
+```
+   Dado que eu estou na tela de trasferência
+   Quando não preencer o campo destino
+   Então exibir mensagem dizendo que o campo é obrigatório
+```
+
+Cenario: Validar obrigatoriedade do campo valor
+```
+   Dado que eu estou na tela de trasferência
+   Quando não preencer o campo valor
+   Então exibir mensagem dizendo que o campo é obrigatório
+```
+
+Cenário: Validar obrigatoriedade do campo data efetivação
+```
+   Dado que eu estou na tela de trasferência
+   Quando não preencer o campo data efetivação
+   Então exibir mensagem dizendo que o campo é obrigatório
+```
+
+Cenário: Validar data efetivação anterior ao dia de atual
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher a data da efetivação anterior ao dia atual
+   Então exibir mensagem não permitindo a transfêrencia
+```
+
+Cenário: Validar data efetivação superior o dia atual
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher a data da efetivação anterior ao dia atual
+   Então exibir mensagem do agendamento da tranfêrencia
+```
+Cenário: Validar transferência com cliente destino invalida
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher o cliente destino invalido
+   Então exibir mensagem de o cliente é invalido
+```
+Cenário: Validar tranfêrencia com um valor negativo
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher as informações para transfêrencia com um valor negativo
+   Então exibir mensagem não que não pode tranferir um valor negativo
+```
+Cenário: Validar transfêrencia com um valor acima do saldo
+
+```
+   Dado que eu estou na tela de trasferência
+   E tenho saldo na conta
+   Quando preencher as informações da transferência porém com valor superior ao saldo
+   Então exibir mensagem de saldo insuficiente
+```
+Cenário: Validar tranfêrencia com um valor abaixo do saldo
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher as informações da transfêrencia com valor abaixo do saldo
+   Então exibir mensagem de tranferencia com sucesso
+```
+Cenário: Validar tranfêrencia com todo o saldo
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher as informações de transfêrencia
+   E transferir todo o saldo
+   Então exibir o saldo zerado
+```
+Cenário: Validar tranfêrencia com o saldo zerado
+
+```
+   Dado que eu estou na tela de trasferência
+   E estou com saldo zerado
+   Quando preencher as informações de transferência 
+   Então exibir o saldo negativo
+```
+Cenário: Validar data efetivação com um formato invalido
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher a data da efetivação com um formato inválido
+   Então exibir a mensagem de data inválida
+```
+Cenário: Validar cliente destino atingindo o limite de digitos
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher o cliente destino atingindo o limite de caracteres
+   Então exibir mensagem deve limnite de caracteres estourado
+```
+Cenário: Validar o valor maximo do valor permitido
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando preencher o valor atingindo seu maximo
+   Então exibir mensagem a mensagem de limite excedido
+```
+Cenário: Validar tranfêrencia com mesmo valor no mesmo dia
+
+```
+   Dado que eu estou na tela de trasferência
+   Quando realizar a mesma transação 2 vezes
+   Então exibir mensagem de confirmação da operaçao
+```
+Cenário Validar cancelar a tranfêrencia
+
+```
+   Dado que eu estou na tela de trasferência
+   Então cancelar a transfêrencia
+```
 
 2 - Escrita do sql
 
