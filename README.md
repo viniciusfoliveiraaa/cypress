@@ -1,6 +1,6 @@
 # Desafio processo seletivo tinnova
 
-* 1 escrita dps cenários do front do banco 
+* 1 escrita dos cenários do front do banco 
 
 Cenario: Validar obrigatoridade do campo destino
 ```
