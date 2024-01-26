@@ -243,5 +243,5 @@ WHERE YEAR(a.ano) BETWEEN 2000 and 2020;
 ```
      * request -> funções que contém as requisições e são exportadas para ser usadas nos arquivos de testes
      * payload -> são os jsons utilizados para fazer as requisições e autentificação
-     * testes  -> são colocados os arquivos de testes e suas validação onde importamos as nossas requests 
+     * testes  -> são colocados os arquivos de testes e suas validações onde importamos as nossas requests 
 ```
