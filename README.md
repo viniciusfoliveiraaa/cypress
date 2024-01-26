@@ -117,10 +117,7 @@ Cenário Validar cancelar a tranfêrencia
    Então cancelar a transfêrencia
 ```
 
-* 2 - Escrita do sql
-
-* Criação das tabelas
-  
+* 2 - criação das tabelas  
 ```
 CREATE TABLE ALUNO(
   coda INT NOT NULL,
@@ -149,7 +146,7 @@ CREATE TABLE ALUNO_DISCIPLINA
 );
 ```
 
-* Adicionando constraints
+* 3 - Adicionando constraints
   
 ```
 ALTER TABLE ALUNO ADD CONSTRAINT PRIMARY_KEY_ALUNO PRIMARY KEY (coda);
@@ -163,7 +160,7 @@ ALTER TABLE ALUNO_DISCIPLINA ADD CONSTRAINT FOREIGN_ALUNO_DISCIPLINA_ID_DISCIPLI
 REFERENCES DISCIPLINA(codd); 
 ```
 
-* Inserindo registros
+* 4 - Inserindo registros
   
 ```
 INSERT INTO ALUNO(coda, nome, ano) VALUES(1,'Vinicius', '2021-10-11');
@@ -190,7 +187,7 @@ INSERT INTO ALUNO_DISCIPLINA(id_aluno, id_disciplina, id_professor) VALUES (4,9,
 INSERT INTO ALUNO_DISCIPLINA(id_aluno, id_disciplina, id_professor) VALUES (7,6,11);
 ```
 
-* 3 - Query resolvendo os exercicios
+* 5 - Query resolvendo os exercicios
 
 ```
 /*Exericicio 1*/
